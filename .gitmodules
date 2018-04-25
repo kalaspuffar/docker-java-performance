@@ -1,3 +1,4 @@
 [submodule "simplewebserver"]
 	path = simplewebserver
 	url = https://github.com/kalaspuffar/simplewebserver.git
+	branch = master
