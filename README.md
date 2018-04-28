@@ -6,6 +6,17 @@ In order to use this repository you clone it using the command below. Notice tha
 git clone --recursive https://github.com/kalaspuffar/docker-java-performance.git
 ```
 
+Requirements
+* Apache Maven
+* OracleJDK 10
+* OpenJDK 11 for Alpine / Musl
+
+Sizes (Your miles may vary)
+* Standard 664MB
+* Small 38.2MB
+* Performance 52.2MB
+
+
 Below you have three commands to build the different flavors of this example. Standard is a full build with debian and a full java. Small is built on alpine and compressed to be as small as possible. Lastly the performance example is using alpine but tries to cache java classes so the jvm don't need to jit these during start up.
 ```
 docker build -t standard -f standard/Dockerfile .
